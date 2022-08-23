@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
+
 
 public class secondActivity extends AppCompatActivity {
 
@@ -14,10 +17,5 @@ public class secondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
     }
 
-    Intent intent = getIntent();
-    String nameToShow = intent.getStringExtra("NAME");
-
-    TextView textView = findViewById(R.id.numAnswerDisplay);
-    textView.setText(nameToShow);
 
 }
