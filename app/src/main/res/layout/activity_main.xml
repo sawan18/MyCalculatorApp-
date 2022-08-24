@@ -47,7 +47,7 @@
         android:inputType="textPersonName"
         android:textColor="@color/teal_200"
         android:textColorHint="#12CDE4"
-        android:textSize="20sp"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,12 +57,12 @@
         app:layout_constraintVertical_bias="0.383" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAdd"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:text="+"
-        android:textSize="20sp"
         android:onClick="findSum"
+        android:text="+"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.322"
@@ -71,12 +71,12 @@
         app:layout_constraintVertical_bias="0.58" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonDifference"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:text="-"
-        android:textSize="20sp"
         android:onClick="findDifference"
+        android:text="-"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.706"
@@ -85,12 +85,12 @@
         app:layout_constraintVertical_bias="0.58" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonProduct"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:text="X"
-        android:textSize="20sp"
         android:onClick="findProduct"
+        android:text="X"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.322"
@@ -99,12 +99,12 @@
         app:layout_constraintVertical_bias="0.776" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonQuotient"
         android:layout_width="98dp"
         android:layout_height="98dp"
-        android:text="÷"
-        android:textSize="20sp"
         android:onClick="findQuotient"
+        android:text="÷"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.706"
@@ -142,5 +142,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.126" />
+
+    <Button
+        android:id="@+id/buttonSqtRoot"
+        android:layout_width="70dp"
+        android:layout_height="200dp"
+        android:text="√"
+        android:textSize="50dp"
+        android:onClick="findSecRoot"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <Button
+        android:id="@+id/buttonPercent"
+        android:layout_width="70dp"
+        android:layout_height="200dp"
+        android:text="%"
+        android:textSize="50sp"
+        android:onClick="findPercent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        tools:ignore="OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
