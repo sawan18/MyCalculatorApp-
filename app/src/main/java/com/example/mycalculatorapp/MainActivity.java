@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void switchScreens(View view) {
-        TextView editText = findViewById(R.id.answerField);
+        TextView editText = findViewById(R.id.numAnswerDisplay);
         String name = editText.getText().toString();
         Intent intent = new Intent(this, secondActivity.class);
         intent.putExtra("NAME", name);
@@ -29,12 +29,47 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.enterNumberTwo);
         TextView numberSumTV = findViewById(R.id.numAnswerDisplay);
 
-        int num1 = Integer.parseInt(number1ET.getText().toString());
-        int num2 = Integer.parseInt(number2ET.getText().toString());
-        int sum = num1 + num2;
+        double num1 = Double.parseDouble(number1ET.getText().toString());
+        double num2 = Double.parseDouble(number2ET.getText().toString());
+        double sum = num1 + num2;
 
         numberSumTV.setText("" + sum);
     }
 
+    public void findDifference(View view) {
+        EditText number1ET = findViewById(R.id.enterNumberOne);
+        EditText number2ET = findViewById(R.id.enterNumberTwo);
+        TextView numberDiffTV = findViewById(R.id.numAnswerDisplay);
+
+        double num1 = Double.parseDouble(number1ET.getText().toString());
+        double num2 = Double.parseDouble(number2ET.getText().toString());
+        double difference = num1 - num2;
+
+        numberDiffTV.setText("" + difference);
+    }
+
+    public void findProduct(View view) {
+        EditText number1ET = findViewById(R.id.enterNumberOne);
+        EditText number2ET = findViewById(R.id.enterNumberTwo);
+        TextView numberProductTV = findViewById(R.id.numAnswerDisplay);
+
+        double num1 = Double.parseDouble(number1ET.getText().toString());
+        double num2 = Double.parseDouble(number2ET.getText().toString());
+        double product = num1 * num2;
+
+        numberProductTV.setText("" + product);
+    }
+
+    public void findQuotient(View view) {
+        EditText number1ET = findViewById(R.id.enterNumberOne);
+        EditText number2ET = findViewById(R.id.enterNumberTwo);
+        TextView numberProductTV = findViewById(R.id.numAnswerDisplay);
+
+        double num1 = Double.parseDouble(number1ET.getText().toString());
+        double num2 = Double.parseDouble(number2ET.getText().toString());
+        double quotient = num1 / num2;
+
+        numberProductTV.setText("" + quotient);
+    }
 
 }
