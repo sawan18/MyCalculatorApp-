@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         numberProductTV.setText("" + quotient);
     }
-
+//    Calculates the n root of the #a through calculations
     public void findSecRoot(View view) {
         EditText number1ET = findViewById(R.id.enterNumberOne);
         EditText number2ET = findViewById(R.id.enterNumberTwo);
