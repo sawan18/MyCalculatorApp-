@@ -5,24 +5,35 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button buttonSecretMessage;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        buttonSecretMessage = findViewById(R.id.buttonSecretMessage);
+
+        buttonSecretMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Thank You For Using Calculator !",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
     }
 
-    public void switchScreens(View view) {
-        TextView editText = findViewById(R.id.numAnswerDisplay);
-        String name = editText.getText().toString();
-        Intent intent = new Intent(this, secondActivity.class);
-        intent.putExtra("NAME", name);
-        startActivity(intent);
-    }
+
 
     public void findSum(View view) {
         EditText number1ET = findViewById(R.id.enterNumberOne);
@@ -100,3 +111,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+
+//
